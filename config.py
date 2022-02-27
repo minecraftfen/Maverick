@@ -4,7 +4,6 @@
 
 # For Maverick
 site_prefix = "/blog/qinqiang/"
-source_dir = "./src/"
 build_dir = "./dict/"
 template = "Galileo"
 index_page_size = 3

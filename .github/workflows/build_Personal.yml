@@ -1,6 +1,6 @@
 # Build demo site and update gh-pages branch
 
-name: Build demo
+name: Build Personal Blog
 
 on:
   push:
@@ -27,7 +27,7 @@ jobs:
 
     - name: Build
       run: |
-        python3 mvrk.py --config src/config.py
+        python3 mvrk.py --config config.py --source_dir ./Personal/
 
     - name: Deploy to GitHub Pages
       uses: docker://peaceiris/gh-pages:v2
