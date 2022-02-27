@@ -16,12 +16,14 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: Set up Python 3.9
+    - name: Set up Python 3.6
       uses: actions/setup-python@v1
       with:
-        python-version: 3.9
+        python-version: 3.6
 
     - name: Install dependencies
+      env:
+        site_prefix: /Maverick/
       run: |
         pip3 install -r requirements.txt
 

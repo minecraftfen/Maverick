@@ -4,7 +4,7 @@
 
 # For Maverick
 site_prefix = "/blog/qinqiang/"
-build_dir = "/github/workspace/dist"
+build_dir = "./dist/"
 template = "Galileo"
 index_page_size = 3
 archives_page_size = 10
